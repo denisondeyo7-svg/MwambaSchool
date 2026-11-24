@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logonobg.png'
 function navbar() {
     return (
         <header>

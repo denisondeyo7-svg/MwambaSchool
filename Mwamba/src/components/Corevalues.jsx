@@ -13,7 +13,7 @@ function Corevalues() {
         return (
         <div className="values">
             <br /><br />
-            <h1>Core Values</h1>
+            <h1>Core <span className="dams">Values</span></h1>
 <br /><br />
             <div className="values-wrapper">
                 {values.map((value)=>(

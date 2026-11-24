@@ -75,7 +75,7 @@ header{
 .heroes-img{
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   overflow: hidden;
 }
 
@@ -119,15 +119,18 @@ header{
 
 #contact_btn
 {
+  color: #fff;
   border-radius: 10px;
   min-width: 10rem;
   padding: 18px;
   transition: .3s ease;
-  background: #000000bd;
+  background: goldenrod;
   font-size: 16px;
+  border: 1px solid goldenrod;
 
 }
 #about_btn{
+  color: #fff;
   font-size: 16px;
   background: #77777767;
   border-radius: 10px;
@@ -138,7 +141,18 @@ header{
 
 #about_btn:hover{
   
-  background: #000000bd;
+  background: goldenrod;
+  border: 1px solid goldenrod;
+}
+
+#Explore{
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  width: 40%;
 }
 
 #contact_btn:hover{
@@ -146,7 +160,48 @@ header{
   transform: translateY(-4px);
 }
 
+.dams{
+  color: goldenrod;
+  font-family: serif;
+}
 
+.announcements{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background: #e4e1e1;
+  width: 100%;
+}
+
+.announcements h2,
+.announcements h1{
+  color: #000;
+}
+
+.events{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.board{
+  flex-grow: 1;
+  position: relative;
+  
+  
+}
+li{
+  color: #333;
+}
+.board-card{
+  padding: 15px;
+  border-radius: 10px;
+  border-bottom: 1px solid goldenrod;
+}
 .about{
   height: auto;
   width: 100%;
@@ -180,16 +235,11 @@ header{
 .about-card p{
   color: #333;
 }
-.about-headline{
-  padding: 10px;
-  color: #000;
-  background: #999;
-  color: #fff;
-}
+
 
 .image{
-  flex-grow: 1;
-  width: 20rem;
+  
+  width: 25rem;
   height: 26rem;
   border-radius: 10px;
   overflow: hidden;
@@ -201,27 +251,6 @@ header{
   height: 100%;
   object-fit: cover;
 }
-
-.cards{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-grow: 1;
-  flex-wrap: wrap;
-}
-
-.the-card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-  padding: 10px;
-  box-shadow: 0 0 5px #777;
-  border:1px solid #777;
-  border-radius: 5px;
-}
-
 .icon{
   display: flex;
   align-items: center;
@@ -264,7 +293,8 @@ header{
   gap: 12px;
   padding: 12px;
   width: 18rem;
-  background: #dedede;
+  box-shadow:  0 0 5px #999;
+  background: #fff;
   border-left: 6px solid goldenrod;
   border-radius: 10px;
   transition: .3s ease;
@@ -299,13 +329,20 @@ header{
   align-items: center;
   justify-content: center;
   width: 90%;
-  background: #000;
   flex-direction: column !important;
  }
 
  #contact_btn,
  #about_btn{
   flex-grow: 1;
-  min-width: 14rem;
+  min-width: 15rem;
  }
+}
+
+
+@media screen and (max-width:900px){
+  .image{
+    flex-grow: 1;
+    
+  }
 }
