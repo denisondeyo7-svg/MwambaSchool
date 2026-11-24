@@ -104,6 +104,7 @@ header{
 }
 
 .school-name{
+  text-align: center;
   color: #fff;
   font-family: serif;
 }
