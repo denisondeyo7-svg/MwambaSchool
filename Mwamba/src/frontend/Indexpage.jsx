@@ -4,10 +4,10 @@ import Announcements from '../components/Announcements';
 import AboutComponent from '../components/AboutComponent';
 function Indexpage() {
     return (
-        <div className="main">
+        <div className="main"id='Home'>
             <Navbar/>
             <br /><br />
-            <div className="heroes">
+            <div className="heroes" >
                 
                 <div className='heroes-img'>
             <br />
@@ -30,7 +30,7 @@ function Indexpage() {
                     </div>
                 </div>
                 <Announcements/>
-                
+             
                 <AboutComponent/><br />
             </div>
             

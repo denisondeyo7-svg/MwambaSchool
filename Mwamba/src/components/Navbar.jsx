@@ -1,10 +1,12 @@
-import logo from '../assets/logonobg.png'
+import logo from '../assets/logo.png'
 function navbar() {
     return (
         <header>
             <div className="header-content">
                 <div className="logo">
-                    <img src={logo} alt="logo" />
+                    <div className="header-content-logo">
+                        <img src={logo} alt="logo" />
+                    </div>
 
                     <div className="name">
                         <p>RCEA</p>
@@ -12,11 +14,9 @@ function navbar() {
                 </div>
 
                 <nav>
-                    <a href="">Home</a>
-                    <a href="">Students</a>
-                    <a href="">Teachers</a>
-                    <a href="">Administration</a>
+                    <a href="#Home">Home</a>
                     <a href="#About">About us</a>
+                    <a href="">Administration</a>
                     <a href="">Portal</a>
                 
                 </nav>

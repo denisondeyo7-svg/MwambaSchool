@@ -3,7 +3,7 @@ import aboutimg from '../assets/WhatsApp Image 2026-11-22 at 20.23.55 (2).jpeg'
 function AboutComponent() {
     return (
         <div className="about" id='About'>
-            <br /> <br />
+            <br /> <br /><br /><br />
             <h1>About <span className='dams'>Us</span></h1>
  <br /> <br />
             <div className="about-wrapper">

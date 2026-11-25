@@ -9,18 +9,17 @@ body{
 html{
   scroll-behavior: smooth;
 }
+
 header{
   position: fixed;
   top: 0;
   width: 100%;
-  background: goldenrod;
+  background: #333;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   z-index: 1000;
-
-  
 
 }
 
@@ -32,29 +31,50 @@ header{
   justify-content: space-between;
 
 }
-
 .header-content .logo{
-  position: relative;
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 42px;
+}
+  
+
+.header-content-logo{
+  position: relative;
   align-items: center;
   height: 5rem;
   width: 5rem;
-  border-radius: 10px;
-  overflow: hidden;
+  border-radius: 50%;
+  
 }
 
-.header-content .logo img{
+.header-content-logo img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.logo p{
+.name{
+  color: #fff;
   position: absolute;
 }
+nav{
+  display: flex;
+  gap: 12px;
+}
 
+nav a{
+  color: #fff;
+  font-weight: 550;
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
 
+nav a:hover{
+  background: #ffffff4f;
+  
+  
+}
 .main{
   width: 100%;
   display: flex;
@@ -142,8 +162,8 @@ header{
 
 #about_btn:hover{
   
-  background: goldenrod;
-  border: 1px solid goldenrod;
+  background: #000;
+  border: 1px solid #000;
 }
 
 #Explore{
@@ -154,8 +174,15 @@ header{
   color: #fff;
   border-radius: 5px;
   width: 40%;
+  border: 1px solid #333;
+  transition: .3s ease;
 }
 
+#Explore:hover{
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
 #contact_btn:hover{
   background: #00000059;
   transform: translateY(-4px);
@@ -170,7 +197,7 @@ header{
   display: flex;
   flex-direction: column;
   gap: 22px;
-  background: #e4e1e1;
+  background: #dbd7d7;
   width: 100%;
 }
 
@@ -269,7 +296,7 @@ li{
 }
 
 .values{
-  background: #e7e7e7;
+  background: #d1d1d1;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -300,10 +327,12 @@ li{
   border-radius: 10px;
   transition: .3s ease;
   flex-grow: 1;
+  color: #333;
 }
 
 .value-card i{
   font-size: 28px;
+  color: #333;
 }
 .value-card h2{
   color: #333;
@@ -325,6 +354,50 @@ li{
   transform: translateY(-4px);
 }
 
+footer{
+  position: relative;
+  top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #333;
+}
+
+footer h2{
+  padding: 15px;
+}
+
+.mainfooter{
+  padding: 10px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 12px;
+  gap: 22px;
+}
+
+.footer-mission{
+  padding: 10px;
+
+}
+
+.footer-mission p{
+  color: #dedede;
+}
+
+.sub-footer{
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #fff;
+  width: 90%;
+}
+
+.sub-footer a{
+  color: #fff;
+}
+
 @media screen and (max-width:360px){
  .actions{
   align-items: center;
@@ -340,10 +413,16 @@ li{
  }
 }
 
-
+@media screen and (max-width:768px){
+  .mainfooter{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
 @media screen and (max-width:900px){
   .image{
     flex-grow: 1;
     
   }
+
+  
 }
