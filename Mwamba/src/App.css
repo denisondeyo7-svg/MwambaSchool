@@ -124,6 +124,7 @@ nav a:hover{
 }
 
 .school-name{
+  line-height: 110%;
   text-align: center;
   color: #fff;
   font-family: serif;
