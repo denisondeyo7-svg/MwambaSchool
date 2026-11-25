@@ -3,13 +3,14 @@ function navbar() {
     return (
         <header>
             <div className="header-content">
-                <div className="logo">
+                <div className="header-logo">
                     <div className="header-content-logo">
                         <img src={logo} alt="logo" />
                     </div>
 
-                    <div className="name">
-                        <p>RCEA</p>
+                    <div className="header-school-name">
+                        <p className='name-of-school'>RCEA</p>
+                        <small>Arise & Shine</small>
                     </div>
                 </div>
 

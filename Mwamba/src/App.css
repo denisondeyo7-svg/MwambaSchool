@@ -31,19 +31,19 @@ header{
   justify-content: space-between;
 
 }
-.header-content .logo{
+.header-logo{
   display: flex;
   align-items: center;
-  gap: 42px;
+  gap: 12px;
+  
 }
   
 
 .header-content-logo{
-  position: relative;
-  align-items: center;
   height: 5rem;
+  min-width: 5rem;
   width: 5rem;
-  border-radius: 50%;
+  
   
 }
 
@@ -53,9 +53,13 @@ header{
   object-fit: cover;
 }
 
-.name{
+.name-of-school{
+  font-family: serif;
+  font-style: italic;
+}
+.header-school-name{
   color: #fff;
-  position: absolute;
+  
 }
 nav{
   display: flex;
