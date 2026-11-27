@@ -561,10 +561,11 @@ footer h2{
   flex-wrap: wrap;
   align-self: center;
   gap: 22px;
-  justify-content: space-between;
+
 }
 
 .contact-card1{
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -608,6 +609,7 @@ footer h2{
 }
 
 .contact-card2{
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 22px;

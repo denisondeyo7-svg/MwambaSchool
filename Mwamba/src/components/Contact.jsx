@@ -23,7 +23,7 @@ function Contact() {
 
                             <div className="detail">
                                 <small>Chat on Whatsapp</small>
-                                <a href="https://wa.me/254722438587"target="_blank" rel="noopener noreferrer">Whatsapp</a>
+                                <a href="https://wa.me/254722438587?text=Hello%20RCEA%20Mwamba%20senior%20School%2C%20I%20would%20like%20to%20make%20an%20enquiry."target="_blank" rel="noopener noreferrer">Whatsapp</a>
                             </div>
                         </div>
 
