@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar';
-import heros2 from '../assets/image_32b92c39.jpg'
+import heros2 from '../assets/administration.webp'
 import Announcements from '../components/Announcements';
 import AboutComponent from '../components/AboutComponent';
 import Advice from '../components/Advice';
