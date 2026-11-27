@@ -22,6 +22,10 @@ function navbar() {
                     <a href="">Portal</a>
                 
                 </nav>
+
+                <div className="menubtn">
+                    <i className='fas fa-bars'></i>
+                </div>
             </div>
             
         </header>

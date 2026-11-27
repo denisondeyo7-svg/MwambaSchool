@@ -30,6 +30,7 @@ function Announcements() {
                     </div>
                 </div>
             </div>
+            <br />
         </div>
     );
 }

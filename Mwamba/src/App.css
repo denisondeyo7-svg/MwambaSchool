@@ -80,6 +80,17 @@ nav a:hover{
   
   
 }
+
+.menubtn{
+  display: none;
+  padding: 10px;
+  border:  1px solid #fff;
+  border-radius: 4px;
+}
+.menubtn i{
+  color: #fff;
+  font-size: 22px;
+}
 .main{
   width: 100%;
   display: flex;
@@ -133,8 +144,19 @@ nav a:hover{
   text-align: center;
   color: #fff;
   font-family: serif;
+  animation: fade 1s ease;
 }
+@keyframes fade {
+  from{
+    opacity: 0.2;
+    transform: translateY(20px);
+  }
 
+  to{
+     opacity: 1;
+    transform: translateY(0);
+  }
+}
 .actions{
   position: relative;
   top: 22px;
@@ -144,8 +166,74 @@ nav a:hover{
 
 }
 
-#contact_btn
-{
+.advice{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advice h1{
+  color: #000;
+}
+.advice-wrapper{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+
+.advice-card{
+  width: 700px;
+  padding: 10px;
+}
+
+.advice-img{
+ flex-grow: 1;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advice-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease;
+}
+.advice-img img:hover{
+  scale: 1.03;
+}
+
+
+.advice-content{
+  padding: 12px;
+  
+}
+.advice-content p,
+.advice-content h2{
+  color: #333;
+}
+
+.advice-content i{
+  color: #999;
+  
+}
+
+
+.names{
+  color: #333;
+  font-style: italic;
+}
+
+
+.role{
+  color: #666;
+}
+#contact_btn{
   color: #fff;
   border-radius: 10px;
   min-width: 10rem;
@@ -169,7 +257,7 @@ nav a:hover{
 
 #about_btn:hover{
   
-  background: #333;
+  background: #9999;
   color: #fff;
 }
 
@@ -180,7 +268,7 @@ nav a:hover{
   background: #333;
   color: #fff;
   border-radius: 5px;
-  width: 40%;
+  width: 10rem;
   border: 1px solid #333;
   transition: .3s ease;
 }
@@ -194,13 +282,20 @@ nav a:hover{
   background: #00000059;
   transform: translateY(-4px);
 }
-
+.den{
+  font-family: serif;
+  font-style: italic;
+  text-decoration: underline;
+}
 .dams{
   color: goldenrod;
   font-family: serif;
 }
 
 .announcements{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 10px solid #555;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -208,7 +303,10 @@ nav a:hover{
   width: 100%;
 }
 
-.announcements h2,
+.announcements h2{
+  padding: 12px;
+   color: #000;
+}
 .announcements h1{
   color: #000;
 }
@@ -252,14 +350,15 @@ li{
 .about-wrapper{
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 80%;
   flex-wrap: wrap;
+  gap: 22px;
 }
 
 .about-card{
-  flex-grow: 1;
+ flex-grow: 1;
   padding: 10px;
-  width: 26rem;
+  width: 30rem;  
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -273,8 +372,9 @@ li{
 
 
 .image{
-  
-  width: 25rem;
+  flex-grow: 1;
+  position: relative;
+  width: 30rem;
   height: 26rem;
   border-radius: 10px;
   overflow: hidden;
@@ -282,9 +382,45 @@ li{
 }
 
 .image img{
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  animation: crossfade 15s infinite ease-in-out;
+
+}
+
+
+
+
+.image img:nth-child(1) {
+  animation-delay: 0s;
+}
+.image img:nth-child(2) {
+  animation-delay: 5s;
+}
+.image img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+@keyframes crossfade {
+  0% {
+    opacity: 0;
+  }
+  6.67% {
+    opacity: 1; 
+  }
+  33.33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .icon{
   display: flex;
@@ -372,7 +508,8 @@ footer{
 }
 
 footer h2{
-  padding: 15px;
+  padding: 25px;
+  color: #fff;
 }
 
 .mainfooter{
@@ -405,6 +542,126 @@ footer h2{
   color: #fff;
 }
 
+.contact{
+  width: 100%;
+  display: flex;
+  gap: 22px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h1{
+  color: #000;
+}
+
+.contact-card{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  gap: 22px;
+  justify-content: space-between;
+}
+
+.contact-card1{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  width: 500px;
+  box-shadow: 0 0 5px #999;
+}
+
+.contact-card2 h2,
+.contact-card1 h2{
+  color: #333;
+  padding: 10px;
+}
+
+.socials{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.icon{
+  display: flex;
+
+  gap: 12px;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail small{
+  color:#333;
+}
+
+.detail a{
+  color: #00f;
+}
+
+.contact-card2{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  width: 500px;
+  box-shadow: 0 0 5px #999;
+}
+
+.contact-card2 form{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-card2 form .input{
+  width: 90%;
+
+}
+
+.contact-card2 form .input input{
+  width: 90%;
+  padding: 22px;
+  border: 1px solid #999;
+  color: #000;
+  background: #ffff;
+  border-radius: 8px;
+  outline: none;
+  
+}
+
+.contact-card2 form .input #message{
+  width: 90%;
+  padding: 14px;
+  border: 1px solid #999;
+  color: #000;
+  background: #ffff;
+  border-radius: 8px;
+  outline: none;
+  height: 7rem;
+  width: 94%;
+  
+}
+
+#sendmessage{
+  padding: 14px;
+  border: transparent;
+  width: 90%;
+}
+
+
 @media screen and (max-width:360px){
  .actions{
   align-items: center;
@@ -421,6 +678,10 @@ footer h2{
 }
 
 @media screen and (max-width:768px){
+  .menubtn{
+  display: block;
+  
+}
   nav{
     display: none;
   }
